@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <title>Error!</title>
+    <style>
+      body {
+          background-image: url("/static/images/error.jpg");
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+        }
+    
+        .container {
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: rgba(255, 255, 255, 0.9);
+          padding: 35px;
+          border-radius: 10px;
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+          max-width: 80%;
+          text-align: center;
+          z-index: 1;
+        }
+    
+        h3 {
+          font-size: 2em;
+          margin-top: 0;
+          margin-bottom: 0.5em;
+        }
+    
+        p {
+          font-size: 1.2em;
+          margin-top: 0;
+          margin-bottom: 1em;
+        }
+        
+        q {
+          font-size: 0.95em;
+          margin-top: 0;
+          margin-bottom: 1em;
+        }
+
+        .blur {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          filter: blur(5px);
+          z-index: -1;
+        }
+
+        button {
+          padding: 10px 20px;
+          background-color: #47AB11;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+          background-color: #3e8e41;
+        }
+        
+        button:focus {
+          outline: none;
+        }
+        
+      </style>
+    </head>
+    <body>
+      <div class="blur"></div>
+      <div class="container">
+        <h3>Error</h3>
+        <p>Sorry, Movie Not Found!</p>
+        <q>Note : Please ensure that you have entered the right details. </q><br><br>
+        <a href="{% url 'home' %}"><button>Retry</button></a>
+      </div>
+    </body>
+    </html>

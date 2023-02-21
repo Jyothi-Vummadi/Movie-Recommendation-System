@@ -1,0 +1,48 @@
+<!-- my_template.html -->
+{% comment %} <!DOCTYPE html>
+<html>
+  <head>
+    <title>Recommendations</title>
+	<link rel="stylesheet" href="/static/css/style1.css">
+  </head>
+  <body align = 'center'>
+	<br><br>
+	<div>
+	<th>
+	<td>
+    {{ movie_list|safe }}
+	</td>
+	</th>
+	</div><br><br>
+	<a href="{% url 'home' %}">
+	<button type="button">Try Again</button> </a>
+  </body>
+</html> {% endcomment %}
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<META http-equiv="Content-Type" content="text/html; charset=utf-8"><style></style>
+			<link rel="stylesheet" href="/static/css/style1.css">
+		</head>
+		<body>
+	<u></u>
+	  <div align="center">
+		<div class="container">
+			<h1 align="left">Recommendations:</h1>
+		</div>
+		<br><br>
+		<div class='container2'>
+			<table class = 'my-table'><th>
+			<td>
+			{{ movie_list|safe }}
+			</td>
+			</th>
+		</table></div>
+	  </div>
+	  <br>
+		<a href="{% url 'home' %}">
+		<button class = 'btn' align = 'center'>Try Again</button> </a>
+		<div class="empty-container"></div>
+	</body>
+	</html> 

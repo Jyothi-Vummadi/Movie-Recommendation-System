@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+/* div {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  } */
+body{
+  background-image: url("../images/popcorn.jpg");
+  background-size: cover;
+}
+
+h1{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: rgb(9, 0, 0);
+}
+
+.my-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: center;
+}
+.my-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+.my-table th, .my-table td {
+  padding: 8px;
+}
+
+
+.page-heading{
+  background-color: #801919;
+  width: fit-content;
+  margin-left: 100px;
+  margin-top: 15px;
+  border-radius: 15px;
+}
+
+th {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 15px;
+  color: rgb(12, 0, 0);
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  font: 'Times New Roman';
+  position: absolute;
+  top: 9%;
+  left: 17%;
+  transform: translate(-75%, -75%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+  text-align: center;
+  z-index: 1;
+  width: 270px;
+  height: 50px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  transform: translate(750px, 675px);
+  padding: 10px 20px;
+  background-color: #47AB11;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container2 {
+  position: absolute;
+  top: 55%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+  text-align: center;
+  z-index: 1;
+  border-collapse: collapse;
+  border: 1px solid black;
+  overflow: auto;
+  max-height: 550px;
+}
+
+/* .btn{
+  margin-bottom: 50px;
+} */
+
+.empty-container {
+  position:absolute;
+  width: 50%;
+  height: 35px;
+  top: 110%;
+}

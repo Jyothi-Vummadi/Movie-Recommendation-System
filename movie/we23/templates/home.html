@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Movie Recommender</title>
+	<link rel="stylesheet" href="./static/css/style2.css">
+</head>
+<body>
+	<div id = "bg"></div>
+	<form method="POST" align = 'center'>
+		{% csrf_token %}
+		{% comment %} <label for="movie_name">Movie Name:</label> {% endcomment %}
+		<div class = 'form-field'>
+		<input type="text" placeholder="Enter movie name" name="movie_name" id="movie_name" placeholder="Enter movie name" required><br><br>
+		</div>
+		{% comment %} <label for="movie_year">Movie Year:</label> {% endcomment %}
+		<select name="movie_year" id="year" required>
+			{% for year in years %}
+				<option value="{{ year }}">{{ year }}</option>
+			{% endfor %}
+			<option value="" selected disabled hidden>Select Year of Release</option>
+		</select>
+		{% comment %} <label for="number">Number:</label> {% endcomment %}
+		<select name="number" id="number">
+			{% for num in number %}
+				<option value="{{ num }}">{{ num }}</option>
+			{% endfor %}
+			<option value="" selected disabled hidden>Select Number of Movies</option>
+		</select>
+		{% comment %} <label for="rating">Rating:</label> {% endcomment %}
+		<select name="rating" id="rating">
+			{% for rat in rating %}
+				<option value="{{ rat }}">{{ rat }}</option>
+			{% endfor %}
+			<option value="" selected disabled hidden>Select Rating</option>
+		</select><br><br>
+		<button class = 'btn' type="submit">Get Recommendations</button>
+	</form>
+</body>
+</html>  
+
+
+
+
+
+
+
+
+
+
+{% comment %} <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page with Background Image Example</title>
+  <link rel="stylesheet" href="D:\WE Final Project\movie\we23\static\css\style2.css">
+  
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="bg"></div>
+
+
+
+<form>
+  <h1 style="color: white;">Welcome</h1>
+
+  
+  <div class="form-field">
+    <input type="email" placeholder="Enter movie name" required/>
+  </div>
+  
+  <div>
+    <!-- <label for="year">Select a Year:</label> -->
+    <select id="year">
+    <option value="" selected disabled hidden>Select year of release</option>
+</select>
+
+</div>
+<div>
+  <!-- <label for="year">Select a Year:</label> -->
+  <select id="number">
+  <option value="" selected disabled hidden>Select number of movies</option>
+</select>
+
+</div>
+<div>
+  <!-- <label for="year">Select a Year:</label> -->
+  <select id="rating">
+  <option value="" selected disabled hidden>Select rating</option>
+  <option>5</option>
+    <option>4</option>
+    <option >3</option>
+    <option>2</option>
+	<option>1</option>
+    <!-- <option>Terrible</option> -->
+</select>
+
+</div>
+
+  <div class="form-field">
+    <button class="btn" type="submit">Get Recommendations</button>
+  </div>
+  <script src="D:\WE Final Project\movie\we23\static\js\js1.js"></script>
+</form>
+<!-- partial -->
+  
+</body>
+</html> {% endcomment %}
