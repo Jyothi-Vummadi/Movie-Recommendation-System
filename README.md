@@ -28,7 +28,7 @@ CSS <br/>
 Django <br/>
 
 # Installation
-Python needs to be installed
+Python needs to be installed.
 
 # To view website
 Step 1 : Go to the movie folder and run : python manage.py runserver <br/>
